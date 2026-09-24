@@ -1,12 +1,14 @@
+// ignore: duplicate_ignore
+// ignore: file_names
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const Tugas9_Flutter());
 }
 
-// ======================================================
-// HALAMAN UTAMA
-// ======================================================
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -42,25 +44,14 @@ class Tugas9_Flutter extends StatelessWidget {
         ),
 
         body: const TabBarView(
-          children: [
-            
-            ListKategori(),
-
-
-            ListKategoriMap(),
-
-
-            ListProdukPage(),
-          ],
+          children: [ListKategori(), ListKategoriMap(), ListProdukPage()],
         ),
       ),
     );
   }
 }
 
-// ======================================================
-// HALAMAN 1 - LIST STRING
-// ======================================================
+
 
 class ListKategori extends StatelessWidget {
   const ListKategori({super.key});
@@ -81,6 +72,7 @@ class ListKategori extends StatelessWidget {
 
 
 
+
 class ListKategoriMap extends StatelessWidget {
   const ListKategoriMap({super.key});
 
@@ -98,9 +90,7 @@ class ListKategoriMap extends StatelessWidget {
   }
 }
 
-// ======================================================
-// HALAMAN 3 - MODEL
-// ======================================================
+
 
 class ListProdukPage extends StatelessWidget {
   const ListProdukPage({super.key});
@@ -116,9 +106,7 @@ class ListProdukPage extends StatelessWidget {
   }
 }
 
-// ======================================================
-// 1. LIST STRING
-// ======================================================
+
 
 final List<String> kategori = [
   'Buah',
@@ -133,9 +121,8 @@ final List<String> kategori = [
   'Minuman',
 ];
 
-// ======================================================
-// 2. LIST MAP
-// ======================================================
+
+
 
 final List<Map<String, dynamic>> kategoriMap = [
   {'nama': 'Melon', 'icon': Icons.food_bank},
@@ -150,9 +137,8 @@ final List<Map<String, dynamic>> kategoriMap = [
   {'nama': 'Minuman', 'icon': Icons.local_drink},
 ];
 
-// ======================================================
-// MODEL PRODUK
-// ======================================================
+
+
 
 class Produk {
   final String nama;
@@ -168,9 +154,7 @@ class Produk {
   });
 }
 
-// ======================================================
-// DATA PRODUK
-// ======================================================
+
 
 final List<Produk> produk = [
   Produk(
@@ -235,9 +219,7 @@ final List<Produk> produk = [
   ),
 ];
 
-// ======================================================
-// WIDGET LIST PRODUK
-// ======================================================
+
 
 class ListProduk extends StatelessWidget {
   final Produk produk;

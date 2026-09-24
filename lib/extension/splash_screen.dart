@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:salman_project_app/constant/day15/preference_handler.dart';
 import 'package:salman_project_app/extension/login_screen.dart';
 import 'package:salman_project_app/extension/navigator.dart';
+import 'package:salman_project_app/pages/Tugas.dart/Tugas11_Flutter_Implementasi%20Sesi%20Pengguna%20(Shared%20Preferences).dart';
 
-class SplashScreenDay15 extends StatefulWidget {
-  const SplashScreenDay15({super.key});
+class Tugas11_Flutter extends StatefulWidget {
+  const Tugas11_Flutter({super.key});
 
   @override
-  State<SplashScreenDay15> createState() => _SplashScreenDay15State();
+  State<Tugas11_Flutter> createState() => _Tugas11_FlutterState();
 }
 
-class _SplashScreenDay15State extends State<SplashScreenDay15> {
+class _Tugas11_FlutterState extends State<Tugas11_Flutter> {
   @override
   void initState() {
     super.initState();
@@ -24,7 +25,7 @@ class _SplashScreenDay15State extends State<SplashScreenDay15> {
       context.pushAndRemoveAll(HalamanTerimaKasih(email: "email"));
     } else {
       // ignore: use_build_context_synchronously
-      context.pushAndRemoveAll(LoginScreenDay15());
+      context.pushAndRemoveAll(LoginScreen());
     }
   }
 

@@ -63,6 +63,7 @@ extension ExtendedNavigator on BuildContext {
     );
   }
 
+  // ignore: strict_top_level_inference
   void pop([result]) async {
     return Navigator.of(this).pop(result);
   }

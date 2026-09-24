@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:salman_project_app/pages/Tugas.dart/Tugas11_Flutter.dart';
-
+import 'package:salman_project_app/extension/splash_screen.dart';
 import 'constant/day15/preference_handler.dart';
 
 void main() async {
@@ -21,7 +20,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Tugas6_Flutter(),
+      home: const Tugas11_Flutter(),
     );
   }
 }
+
+

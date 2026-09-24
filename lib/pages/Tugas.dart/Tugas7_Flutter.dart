@@ -1,3 +1,7 @@
+// ignore: duplicate_ignore
+// ignore: file_names
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -407,6 +411,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(20),
 
         child: SingleChildScrollView(
+          // ignore: sized_box_for_whitespace
           child: Container(
             width: double.infinity,
             child: DefaultTextStyle(

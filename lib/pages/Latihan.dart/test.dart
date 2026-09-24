@@ -15,17 +15,23 @@ void main() {
   ];
 
   // 3. Menampilkan Informasi Toko
+  // ignore: avoid_print
   print("=== INFORMASI TOKO ===");
+  // ignore: avoid_print
   print("Nama Toko: $namaToko");
+  // ignore: avoid_print
   print("Tahun Berdiri: $tahunBerdiri");
+  // ignore: avoid_print
   print("");
 
   // 4. Menampilkan Daftar Produk
+  // ignore: avoid_print
   print("=== DAFTAR PRODUK ===");
 
   // Menggunakan perulangan (loop) agar lebih efisien dan dinamis daripada akses indeks manual
   for (int i = 0; i < daftarProduk.length; i++) {
     final produk = daftarProduk[i];
+    // ignore: avoid_print
     print("${i + 1}. ${produk['nama']} - Rp ${produk['harga']}");
   }
 }
