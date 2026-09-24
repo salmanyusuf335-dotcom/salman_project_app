@@ -20,8 +20,10 @@ class _SplashScreenDay15State extends State<SplashScreenDay15> {
   void goToLogin() async {
     await Future.delayed(Duration(seconds: 5));
     if (PreferenceHandler.isLogin == true) {
+      // ignore: use_build_context_synchronously
       context.pushAndRemoveAll(HalamanTerimaKasih(email: "email"));
     } else {
+      // ignore: use_build_context_synchronously
       context.pushAndRemoveAll(LoginScreenDay15());
     }
   }

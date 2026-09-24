@@ -43,19 +43,13 @@ class Tugas9_Flutter extends StatelessWidget {
 
         body: const TabBarView(
           children: [
-            // ==========================================
-            // 1. LIST STRING
-            // ==========================================
+            
             ListKategori(),
 
-            // ==========================================
-            // 2. LIST MAP
-            // ==========================================
+
             ListKategoriMap(),
 
-            // ==========================================
-            // 3. MODEL
-            // ==========================================
+
             ListProdukPage(),
           ],
         ),
@@ -85,9 +79,7 @@ class ListKategori extends StatelessWidget {
   }
 }
 
-// ======================================================
-// HALAMAN 2 - LIST MAP
-// ======================================================
+
 
 class ListKategoriMap extends StatelessWidget {
   const ListKategoriMap({super.key});
